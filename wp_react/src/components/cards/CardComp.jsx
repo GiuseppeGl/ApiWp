@@ -14,7 +14,7 @@ export default function CardComp({ e, index, articoloSingolo }) {
 
   // per le immagini: prendere il featured media
   // fare poi una chiamata fetch a: 
-  // https://justatip.it/wp-json/wp/v2/media?parent="qui_metti_il_feature_media"
+  // https://prof-endpoint/wp-json/wp/v2/media?parent="qui_metti_il_feature_media"
 
   // useEffect(() => {
   //     axios(urlSito + "tags")
@@ -29,15 +29,7 @@ export default function CardComp({ e, index, articoloSingolo }) {
   //   }, []);
 
 
-  //   function creaCategorie() {
-  //     e.tags.forEach(singleTag => {
-  //       if(tags.filter(tag => singleTag.includes(tag.id))) {
-  //           arrayCategorie.push(tag.name)
-  //       }
-  //       console.log(arrayCategorie);
-  //     }); 
-      
-  //   }
+  
 
 
   return (
@@ -45,7 +37,7 @@ export default function CardComp({ e, index, articoloSingolo }) {
       <Card>
         <Card.Img
           variant="top"
-          src={e.jetpack_featured_media_url || "/no-image.png"}
+          src={e.featured_media_url || "/no-image.png"}
           alt="imm card"
         />
         <Card.Body>

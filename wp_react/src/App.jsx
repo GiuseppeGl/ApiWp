@@ -15,14 +15,12 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      {/* <HeaderComp /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articolo/:indexID" element={<ArticlePage />} />
         <Route path="/search-result/:searchTerm" element={<SearchPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      {/* <PlayerComp /> */}
     </BrowserRouter>
   );
 }

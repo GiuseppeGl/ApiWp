@@ -1,1 +1,1 @@
-export const urlSito = 'https://justatip.it/wp-json/wp/v2/';
+export const urlSito = 'https://end-point-prof/wp-json/wp/v2/';
