@@ -8,9 +8,9 @@ export default function CardComp({ e, index, articoloSingolo }) {
   
   const navigate = useNavigate();
 
-  const [tags, setTags] = useState([]);
 
-  let arrayCategorie = [];
+
+  
 
   // per le immagini: prendere il featured media
   // fare poi una chiamata fetch a: 
